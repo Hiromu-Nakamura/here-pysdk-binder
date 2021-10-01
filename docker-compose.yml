@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  here-pysdk-binder:
+    image: here-pysdk-binder # provide image name
+    container_name: here-pysdk-binder
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/notebooks
